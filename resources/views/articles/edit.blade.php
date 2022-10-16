@@ -1,25 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        
-        <!-- Title & Web Icon -->
-        <title>EZ: Article</title>
-        <link rel="shortcut icon" href="{{ asset('img/logo/black-ez.png') }}">
+@extends('articles.layout')
 
-        {{-- Google Fonts --}}
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;700&family=Roboto+Mono&display=swap" rel="stylesheet">
-        
-        {{-- CSS --}}
-        
-        <link rel="stylesheet" href="{{ asset('stylesheet/style.css') }}">
-        <link rel="stylesheet" href="../stylesheet/style-foote.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    </head>
+@section('content')
     <body style="background-size: cover; background-image: url({{ asset('img/background/img-bg-2.jpg') }});">
         <div class="card mt-4 mb-4 d-flex justify-content-center align-items-center container">
             <div class="card-body d-flex flex-column" style="position: relative;">
@@ -84,4 +65,4 @@
             </div>
         </div>
     </body>
-</html>
+@endsection
